@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#222;
+    color: #fff ;
+    font-family: cursive,sans-serif;
+    overflow-x: hidden;
+}
+.crud {
+   
+ width: 80%;
+ margin: auto;
+}
+.crud .head {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+input {
+    width: 100%;
+    height: 36px;
+    outline: none;
+    border: none;
+    background-color: #111;
+    margin: 5px 0 !important;
+    border-radius: 4px;
+    padding: 4px;
+    color: #fff;
+    transition: 0.3s;
+
+}
+input:focus{
+    background-color: #000;
+    transform: scale(1.01);
+
+}
+.price input {
+    width: 20%;
+}
+#total {
+background-color: rgb(215, 81, 72);
+border-radius: 4px;
+padding: 5px 4px;
+}
+#total::before{
+    content: "Total: ";
+}
+button {
+    width: 100%;
+    height: 36px;
+    border: none !important;
+    cursor: pointer;
+    background-color: #C2185B;
+    border-radius: 20px !important;
+    transition: 0.3s;
+    color: #fff;
+    text-transform: uppercase !important;
+    margin: 3px 0 !important;
+    font-family: cursive,sans-serif !important;
+}
+button:hover {
+    background-color: #F06292;
+   
+}
+.btnSearch {
+    display: flex;
+    justify-content: space-between;
+}
+.btnSearch button {
+    width: 45%;
+}
+#deleteAll {
+    margin: 20px 0;
+}
+table {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+
+}
+table th {
+text-transform: uppercase;
+}
+td,th {
+    padding: 5px;
+}
+
+
+
+table {
+    width: 100%;
+  
+    table-layout: auto;
+   
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+table th,
+table td {
+    word-wrap: break-word;
+    white-space: nowrap;
+    
+}
+
+.table-container {
+    overflow-x: auto;
+    margin: 0 auto;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .crud {
+        width: 100%;
+        margin: auto;
+        padding: 0 20px;
+
+    }
+
+    .inputs,
+    .outputs {
+        flex-direction: column;
+       
+    }
+
+    .price input {
+        width: 100%;
+      
+        margin-bottom: 15px;
+    }
+
+    table {
+        font-size: 14px;
+        
+    }
+
+    table th,
+    table td {
+        padding: 8px;
+        word-wrap: break-word;  
+    }
+
+    .table-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .inputs,
+    .outputs {
+        flex-direction: column;
+       
+    }
+
+    input,
+    button {
+        width: 100%;
+      
+    }
+
+    .head h2 {
+        font-size: 18px;
+        
+    }
+
+    .head p {
+        font-size: 14px;
+        
+    }
+
+    #total {
+        font-size: 14px;
+       
+    }
+
+    table {
+        font-size: 12px;
+       
+    }
+    #update,
+    #delete {
+        font-size: 11px;
+    }
+    table th,
+    table td {
+        padding: 5px;
+    }
+}
